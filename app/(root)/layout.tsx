@@ -21,23 +21,26 @@ export default function RootLayout({
 }) {
   return (<ClerkProvider>
     <html lang="en">
-      <Topbar />
+      <body>
+      
+        <Topbar />
 
-      <main>
-        <Leftsidebar />
+        <main>
+          <Leftsidebar />
 
-          <section className='main-container'>
+            <section className='main-container'>
 
-            <div className='w-full max-w-4xl'>
-              { children }
-            </div>
+              <div className='w-full max-w-4xl'>
+                { children }
+              </div>
 
-          </section>
+            </section>
 
-        <Rightsidebar />
-      </main>
+          <Rightsidebar />
+        </main>
 
-      <Bottombar />
+        <Bottombar />
+      </body>
     </html>
   </ClerkProvider>)
 }

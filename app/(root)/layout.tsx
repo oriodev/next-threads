@@ -3,7 +3,7 @@ import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Topbar from '@/components/shared/Topbar'
-import Leftsidebar from '@/components/shared/Leftbar'
+import Leftsidebar from '@/components/shared/Leftsidebar'
 import Rightsidebar from '@/components/shared/Rightbar'
 import Bottombar from '@/components/shared/Bottombar'
 
@@ -25,7 +25,7 @@ export default function RootLayout({
       
         <Topbar />
 
-        <main>
+        <main className='flex flex-row'>
           <Leftsidebar />
 
             <section className='main-container'>
